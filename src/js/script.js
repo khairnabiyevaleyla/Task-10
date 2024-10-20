@@ -45,7 +45,7 @@ function saveToDoList(){
 }
 
 function showToDoList(){
-    const lists = JSON.parse(localStorage.getItem('lists'))
+    const lists = JSON.parse(localStorage.getItem('lists')) || [];
 
     lists.forEach(listText => {
         const listItem = document.createElement("li");
